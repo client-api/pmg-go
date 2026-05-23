@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"os"
 
-	pmg "github.com//"
+	pmg "github.com/client-api/pmg-go"
 )
 
 func main() {
