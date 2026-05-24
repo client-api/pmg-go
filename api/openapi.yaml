@@ -12811,6 +12811,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PmgNode"
       - description: Display all log since this UNIX epoch. Conflicts with 'startcursor'.
@@ -12823,6 +12824,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Start after the given Cursor. Conflicts with 'since'.
         explode: true
@@ -12843,6 +12845,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       responses:
         "200":
@@ -13818,6 +13821,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PmgNode"
       - $ref: "#/components/parameters/PmgQueue"
@@ -13847,6 +13851,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       responses:
         "200":
@@ -14781,6 +14786,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PmgNode"
       - description: Service ID
@@ -14811,6 +14817,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Display all log until this date-time string.
         explode: true
@@ -14876,6 +14883,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PmgNode"
       - description: Only list tasks since this UNIX epoch.
@@ -14887,6 +14895,7 @@ paths:
           format: int64
           type: integer
           x-pmg-typetext: <integer>
+          x-int64: true
         style: form
       - explode: true
         in: query
@@ -14897,6 +14906,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: List of Task States that should be returned.
         explode: true
@@ -14927,6 +14937,7 @@ paths:
           format: int64
           type: integer
           x-pmg-typetext: <integer>
+          x-int64: true
         style: form
       - explode: true
         in: query
@@ -15065,6 +15076,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PmgNode"
       - description: Start at this line when reading the tasklog
@@ -15077,6 +15089,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PmgUpid"
       responses:
@@ -15294,6 +15307,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Sender email address filter.
         explode: true
@@ -15342,6 +15356,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Receiver email address filter.
         explode: true
@@ -15412,6 +15427,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PmgNodesTrackerId"
       - $ref: "#/components/parameters/PmgNode"
@@ -15426,6 +15442,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       responses:
         "200":
@@ -15586,6 +15603,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: "List entries for the user with this primary email address. Quarantine\
           \ users cannot specify this parameter, but it is required for all other\
@@ -15611,6 +15629,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       responses:
         "200":
@@ -16075,6 +16094,7 @@ paths:
           format: int64
           type: integer
           x-pmg-typetext: <integer>
+          x-int64: true
         style: form
       - description: Unique ID
         explode: true
@@ -16268,6 +16288,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: "List entries for the user with this primary email address. Quarantine\
           \ users cannot specify this parameter, but it is required for all other\
@@ -16293,6 +16314,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       responses:
         "200":
@@ -16378,6 +16400,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Query this type of quarantine for users.
         explode: true
@@ -16400,6 +16423,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       responses:
         "200":
@@ -16449,6 +16473,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: "List entries for the user with this primary email address. Quarantine\
           \ users cannot specify this parameter, but it is required for all other\
@@ -16474,6 +16499,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       responses:
         "200":
@@ -16917,6 +16943,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Contact address filter.
         explode: true
@@ -16961,6 +16988,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Year. Defaults to current year. You will get statistics for the
           whole year if you do not specify a month or day.
@@ -17042,6 +17070,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Address filter.
         explode: true
@@ -17086,6 +17115,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Type of statistics
         explode: true
@@ -17164,6 +17194,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Month. You will get statistics for the whole month if you do
           not specify a day.
@@ -17188,6 +17219,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Year. Defaults to current year. You will get statistics for the
           whole year if you do not specify a month or day.
@@ -17258,6 +17290,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Month. You will get statistics for the whole month if you do
           not specify a day.
@@ -17282,6 +17315,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Year. Defaults to current year. You will get statistics for the
           whole year if you do not specify a month or day.
@@ -17352,6 +17386,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Month. You will get statistics for the whole month if you do
           not specify a day.
@@ -17376,6 +17411,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: "Return Mails/<timespan>, where <timespan> is specified in seconds."
         explode: true
@@ -17459,6 +17495,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Month. You will get statistics for the whole month if you do
           not specify a day.
@@ -17483,6 +17520,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Year. Defaults to current year. You will get statistics for the
           whole year if you do not specify a month or day.
@@ -17553,6 +17591,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Receiver address filter.
         explode: true
@@ -17597,6 +17636,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Year. Defaults to current year. You will get statistics for the
           whole year if you do not specify a month or day.
@@ -17786,6 +17826,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Month. You will get statistics for the whole month if you do
           not specify a day.
@@ -17810,6 +17851,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: "Return RBL/PREGREET rejects/<timespan>, where <timespan> is\
           \ specified in seconds."
@@ -17893,6 +17935,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Sender address filter.
         explode: true
@@ -17937,6 +17980,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Year. Defaults to current year. You will get statistics for the
           whole year if you do not specify a month or day.
@@ -18008,6 +18052,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Month. You will get statistics for the whole month if you do
           not specify a day.
@@ -18032,6 +18077,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Year. Defaults to current year. You will get statistics for the
           whole year if you do not specify a month or day.
@@ -18102,6 +18148,7 @@ paths:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         style: form
       - description: Month. You will get statistics for the whole month if you do
           not specify a day.
@@ -18126,6 +18173,7 @@ paths:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         style: form
       - description: Year. Defaults to current year. You will get statistics for the
           whole year if you do not specify a month or day.
@@ -18412,6 +18460,7 @@ components:
         format: int64
         type: integer
         x-pmg-typetext: <integer>
+        x-int64: true
       style: simple
     PmgOgroup:
       description: Groups ID.
@@ -18423,6 +18472,7 @@ components:
         format: int64
         type: integer
         x-pmg-typetext: <integer>
+        x-int64: true
       style: simple
     PmgConfigRuledbOgroup:
       description: Object Group ID.
@@ -18434,6 +18484,7 @@ components:
         format: int64
         type: integer
         x-pmg-typetext: <integer>
+        x-int64: true
       style: simple
     PmgConfigRuledbOgroup2:
       description: Object Groups ID.
@@ -18445,6 +18496,7 @@ components:
         format: int64
         type: integer
         x-pmg-typetext: <integer>
+        x-int64: true
       style: simple
     PmgConfigRuledbId3:
       description: Object ID.
@@ -18456,6 +18508,7 @@ components:
         format: int64
         type: integer
         x-pmg-typetext: <integer>
+        x-int64: true
       style: simple
     PmgConfigTlsInboundDomainsDomain:
       description: Domain which should be removed from tls_inbound_domains
@@ -18751,6 +18804,7 @@ components:
       - 0
       - 1
       type: integer
+      x-pmg-boolean: true
     PmgAutocreateRoleEnum:
       enum:
       - admin
@@ -19609,6 +19663,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         firstname:
           description: First name.
           maxLength: 64
@@ -19753,6 +19808,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         firstname:
           description: First name.
           maxLength: 64
@@ -20637,6 +20693,7 @@ components:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
     ConfigAdminUpdateAdminSectionResponse:
       example:
         total: 0
@@ -20702,6 +20759,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         archivemaxrec:
           default: 5
           description: "Nested archives are scanned recursively, e.g. if a ZIP archive\
@@ -20712,6 +20770,7 @@ components:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         archivemaxsize:
           default: 25000000
           description: Files larger than this limit (in bytes) won't be scanned.
@@ -20719,6 +20778,7 @@ components:
           minimum: 1000000
           type: integer
           x-pmg-typetext: <integer> (1000000 - N)
+          x-int64: true
         dbmirror:
           default: database.clamav.net
           description: ClamAV database mirror server.
@@ -20745,6 +20805,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         maxscansize:
           default: 100000000
           description: Sets the maximum amount of data (in bytes) to be scanned for
@@ -20753,6 +20814,7 @@ components:
           minimum: 1000000
           type: integer
           x-pmg-typetext: <integer> (1000000 - N)
+          x-int64: true
         scriptedupdates:
           allOf:
           - $ref: "#/components/schemas/PmgBoolean"
@@ -20925,6 +20987,7 @@ components:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         name:
           description: Node name.
           format: pve-node
@@ -21402,6 +21465,7 @@ components:
           minimum: 1024
           type: integer
           x-pmg-typetext: <integer> (1024 - N)
+          x-int64: true
         selector:
           description: DKIM Selector
           format: dns-name
@@ -22451,6 +22515,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         conn_rate_limit:
           default: 0
           description: "The maximal number of connection attempts any client is allowed\
@@ -22460,6 +22525,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         delete:
           description: A list of settings you want to delete.
           format: pve-configid-list
@@ -22488,6 +22554,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         dwarning:
           default: 4
           description: SMTP delay warning time (in hours). (postfix option `delay_warning_time`)
@@ -22495,6 +22562,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         ext_port:
           default: 25
           description: SMTP port number for incoming mail (untrusted). This must be
@@ -22596,6 +22664,7 @@ components:
           minimum: 1024
           type: integer
           x-pmg-typetext: <integer> (1024 - N)
+          x-int64: true
         message_rate_limit:
           default: 0
           description: "The maximal number of message delivery requests that any client\
@@ -22605,6 +22674,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
         ndr_on_block:
           allOf:
           - $ref: "#/components/schemas/PmgBoolean"
@@ -22972,6 +23042,7 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-hourly:
           description: "Keep backups for the last <N> different hours. If there is\
             \ more than one backup for a single hour, only the latest one is kept."
@@ -22979,12 +23050,14 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-last:
           description: Keep the last <N> backups.
           format: int64
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-monthly:
           description: "Keep backups for the last <N> different months. If there is\
             \ more than one backup for a single month, only the latest one is kept."
@@ -22992,6 +23065,7 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-weekly:
           description: "Keep backups for the last <N> different weeks. If there ismore\
             \ than one backup for a single week, only the latest one is kept."
@@ -22999,6 +23073,7 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-yearly:
           description: "Keep backups for the last <N> different years. If there is\
             \ more than one backup for a single year, only the latest one is kept."
@@ -23006,6 +23081,7 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         namespace:
           description: "Proxmox Backup Server namespace in the datastore, defaults\
             \ to the root NS."
@@ -23164,6 +23240,7 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-hourly:
           description: "Keep backups for the last <N> different hours. If there is\
             \ more than one backup for a single hour, only the latest one is kept."
@@ -23171,12 +23248,14 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-last:
           description: Keep the last <N> backups.
           format: int64
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-monthly:
           description: "Keep backups for the last <N> different months. If there is\
             \ more than one backup for a single month, only the latest one is kept."
@@ -23184,6 +23263,7 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-weekly:
           description: "Keep backups for the last <N> different weeks. If there ismore\
             \ than one backup for a single week, only the latest one is kept."
@@ -23191,6 +23271,7 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         keep-yearly:
           description: "Keep backups for the last <N> different years. If there is\
             \ more than one backup for a single year, only the latest one is kept."
@@ -23198,6 +23279,7 @@ components:
           type: integer
           x-pmg-typetext: <N>
           x-pmg-format-description: "N"
+          x-int64: true
         namespace:
           description: "Proxmox Backup Server namespace in the datastore, defaults\
             \ to the root NS."
@@ -24181,6 +24263,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -24261,6 +24344,7 @@ components:
           format: int64
           type: integer
           x-pmg-typetext: <integer>
+          x-int64: true
       required:
       - ogroup
     ConfigRuledbAddActionGroupResponse:
@@ -24704,6 +24788,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -24774,6 +24859,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -24846,6 +24932,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -24966,6 +25053,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25018,6 +25106,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25097,6 +25186,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25191,6 +25281,7 @@ components:
           minimum: 0
           type: integer
           x-pmg-typetext: <integer> (0 - N)
+          x-int64: true
       required:
       - spamlevel
     ConfigRuledbSpamfilterResponse:
@@ -25202,6 +25293,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25254,6 +25346,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25327,6 +25420,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25478,6 +25572,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25551,6 +25646,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25659,6 +25755,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25724,6 +25821,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25790,6 +25888,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25881,6 +25980,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -25954,6 +26054,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -26020,6 +26121,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -26124,6 +26226,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -26249,6 +26352,7 @@ components:
           minimum: 64
           type: integer
           x-pmg-typetext: <integer> (64 - N)
+          x-int64: true
         rbl_checks:
           allOf:
           - $ref: "#/components/schemas/PmgBoolean"
@@ -26393,6 +26497,7 @@ components:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         mailfrom:
           description: Text for 'From' header in daily spam report mails.
           type: string
@@ -27002,6 +27107,7 @@ components:
           minimum: 1
           type: integer
           x-pmg-typetext: <integer> (1 - N)
+          x-int64: true
         viewimages:
           allOf:
           - $ref: "#/components/schemas/PmgBoolean"
@@ -27058,6 +27164,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27110,6 +27217,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27162,6 +27270,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27214,6 +27323,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27306,6 +27416,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27324,6 +27435,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27376,6 +27488,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27462,6 +27575,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27538,6 +27652,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27590,6 +27705,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27642,6 +27758,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27694,6 +27811,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27786,6 +27904,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27804,6 +27923,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27856,6 +27976,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -27942,6 +28063,7 @@ components:
         data:
           format: int64
           type: integer
+          x-int64: true
         total:
           description: "Optional total count, present for paginated list responses."
           type: integer
@@ -28268,6 +28390,7 @@ components:
           format: int64
           type: integer
           x-pmg-typetext: <integer>
+          x-int64: true
         path:
           description: Path to the containing file.
           type: string
@@ -32184,6 +32307,7 @@ components:
           description: Creation time of this entry as unix epoch.
           format: int64
           type: integer
+          x-int64: true
         description:
           description: User chosen description for this entry.
           type: string
@@ -32231,6 +32355,7 @@ components:
             factors.
           format: int64
           type: integer
+          x-int64: true
         totp-locked:
           allOf:
           - $ref: "#/components/schemas/PmgBoolean"
@@ -32304,6 +32429,7 @@ components:
             factors.
           format: int64
           type: integer
+          x-int64: true
         totp-locked:
           allOf:
           - $ref: "#/components/schemas/PmgBoolean"
@@ -32436,6 +32562,7 @@ components:
         cid:
           format: int64
           type: integer
+          x-int64: true
         fingerprint:
           type: string
         hostrsapubkey:
@@ -32463,6 +32590,7 @@ components:
         cid:
           format: int64
           type: integer
+          x-int64: true
       required:
       - cid
     ConfigCustomscoresListScoresResponse_data_inner:
@@ -32530,6 +32658,7 @@ components:
           format: int64
           minimum: 1024
           type: integer
+          x-int64: true
         record:
           format: pmg-dkim-record
           type: string
@@ -32648,9 +32777,11 @@ components:
         gcount:
           format: int64
           type: integer
+          x-int64: true
         mcount:
           format: int64
           type: integer
+          x-int64: true
         mode:
           type: string
         profile:
@@ -32662,6 +32793,7 @@ components:
         ucount:
           format: int64
           type: integer
+          x-int64: true
       required:
       - disable
       - mode
@@ -32786,35 +32918,41 @@ components:
           format: int64
           type: integer
           x-pmg-format-description: "N"
+          x-int64: true
         keep-hourly:
           description: "Keep backups for the last <N> different hours. If there is\
             \ more than one backup for a single hour, only the latest one is kept."
           format: int64
           type: integer
           x-pmg-format-description: "N"
+          x-int64: true
         keep-last:
           description: Keep the last <N> backups.
           format: int64
           type: integer
           x-pmg-format-description: "N"
+          x-int64: true
         keep-monthly:
           description: "Keep backups for the last <N> different months. If there is\
             \ more than one backup for a single month, only the latest one is kept."
           format: int64
           type: integer
           x-pmg-format-description: "N"
+          x-int64: true
         keep-weekly:
           description: "Keep backups for the last <N> different weeks. If there ismore\
             \ than one backup for a single week, only the latest one is kept."
           format: int64
           type: integer
           x-pmg-format-description: "N"
+          x-int64: true
         keep-yearly:
           description: "Keep backups for the last <N> different years. If there is\
             \ more than one backup for a single year, only the latest one is kept."
           format: int64
           type: integer
           x-pmg-format-description: "N"
+          x-int64: true
         namespace:
           description: "Proxmox Backup Server namespace in the datastore, defaults\
             \ to the root NS."
@@ -32884,6 +33022,7 @@ components:
         id:
           format: int64
           type: integer
+          x-int64: true
       required:
       - id
     ConfigRuledbConfigResponse_data:
@@ -32901,14 +33040,17 @@ components:
         direction:
           format: int64
           type: integer
+          x-int64: true
         id:
           format: int64
           type: integer
+          x-int64: true
         name:
           type: string
         priority:
           format: int64
           type: integer
+          x-int64: true
       required:
       - active
       - direction
@@ -32924,6 +33066,7 @@ components:
         id:
           format: int64
           type: integer
+          x-int64: true
         info:
           type: string
         name:
@@ -32995,6 +33138,7 @@ components:
         port:
           format: int64
           type: integer
+          x-int64: true
         protocol:
           type: string
         use_mx:
@@ -33202,6 +33346,7 @@ components:
           items:
             format: int64
             type: integer
+            x-int64: true
           type: array
         file-type:
           allOf:
@@ -33456,10 +33601,12 @@ components:
           description: Size of backup file in bytes.
           format: int64
           type: integer
+          x-int64: true
         timestamp:
           description: Backup timestamp (Unix epoch).
           format: int64
           type: integer
+          x-int64: true
       required:
       - filename
       - size
@@ -33501,10 +33648,12 @@ components:
           description: Certificate's notAfter timestamp (UNIX epoch).
           format: int64
           type: integer
+          x-int64: true
         notbefore:
           description: Certificate's notBefore timestamp (UNIX epoch).
           format: int64
           type: integer
+          x-int64: true
         pem:
           description: Certificate in PEM format
           format: pem-certificate
@@ -33514,6 +33663,7 @@ components:
           description: Certificate's public key size
           format: int64
           type: integer
+          x-int64: true
         public-key-type:
           description: Certificate's public key algorithm
           type: string
@@ -33546,6 +33696,7 @@ components:
         nsigs:
           format: int64
           type: integer
+          x-int64: true
         type:
           type: string
         version:
@@ -33735,6 +33886,7 @@ components:
         size:
           format: int64
           type: integer
+          x-int64: true
       required:
       - backup-id
       - backup-time
@@ -33801,6 +33953,7 @@ components:
         last_updated:
           format: int64
           type: integer
+          x-int64: true
         update_avail:
           allOf:
           - $ref: "#/components/schemas/PmgBoolean"
@@ -33883,11 +34036,13 @@ components:
           format: int64
           minimum: 1297163644
           type: integer
+          x-int64: true
         uptime:
           description: The uptime of the system in seconds.
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - boot-info
       - current-kernel
@@ -33903,6 +34058,7 @@ components:
           description: Line number
           format: int64
           type: integer
+          x-int64: true
         t:
           description: Line text
           type: string
@@ -33925,6 +34081,7 @@ components:
         pid:
           format: int64
           type: integer
+          x-int64: true
         status:
           $ref: "#/components/schemas/PmgNodesTasksStatusEnum"
       required:
@@ -33942,11 +34099,13 @@ components:
           format: int64
           minimum: 1297163644
           type: integer
+          x-int64: true
         time:
           description: Seconds since 1970-01-01 00:00:00 UTC.
           format: int64
           minimum: 1297163644
           type: integer
+          x-int64: true
         timezone:
           description: Time zone
           type: string
@@ -34003,6 +34162,7 @@ components:
           description: Delivery timestamp.
           format: int64
           type: integer
+          x-int64: true
         to:
           description: Receiver email address.
           type: string
@@ -34068,6 +34228,7 @@ components:
           description: Delivery timestamp.
           format: int64
           type: integer
+          x-int64: true
         to:
           description: Receiver email address.
           type: string
@@ -34101,6 +34262,7 @@ components:
           description: Size of raw email.
           format: int64
           type: integer
+          x-int64: true
         envelope_sender:
           description: SMTP envelope sender.
           type: string
@@ -34123,6 +34285,7 @@ components:
           description: Receive time stamp
           format: int64
           type: integer
+          x-int64: true
       required:
       - bytes
       - envelope_sender
@@ -34160,6 +34323,7 @@ components:
           description: Size of raw email.
           format: int64
           type: integer
+          x-int64: true
         content:
           description: "Raw email data (first 4096 bytes). Useful for preview. NOTE:\
             \ The  'htmlmail' formatter displays the whole email."
@@ -34196,6 +34360,7 @@ components:
           description: Receive time stamp
           format: int64
           type: integer
+          x-int64: true
       required:
       - bytes
       - content
@@ -34222,6 +34387,7 @@ components:
           description: Attachment ID
           format: int64
           type: integer
+          x-int64: true
         name:
           description: Raw email header data.
           type: string
@@ -34229,6 +34395,7 @@ components:
           description: Size of raw attachment in bytes.
           format: int64
           type: integer
+          x-int64: true
       required:
       - content-type
       - id
@@ -34259,6 +34426,7 @@ components:
           description: Size of raw email.
           format: int64
           type: integer
+          x-int64: true
         envelope_sender:
           description: SMTP envelope sender.
           type: string
@@ -34284,6 +34452,7 @@ components:
           description: Receive time stamp
           format: int64
           type: integer
+          x-int64: true
       required:
       - bytes
       - envelope_sender
@@ -34310,6 +34479,7 @@ components:
           description: Number of stored mails.
           format: int64
           type: integer
+          x-int64: true
         mbytes:
           description: Estimated disk space usage in MByte.
           type: number
@@ -34334,6 +34504,7 @@ components:
           description: Size of raw email.
           format: int64
           type: integer
+          x-int64: true
         envelope_sender:
           description: SMTP envelope sender.
           type: string
@@ -34356,6 +34527,7 @@ components:
           description: Receive time stamp
           format: int64
           type: integer
+          x-int64: true
         virusname:
           description: Virus name.
           type: string
@@ -34381,6 +34553,7 @@ components:
           description: Number of stored mails.
           format: int64
           type: integer
+          x-int64: true
         mbytes:
           description: Estimated disk space usage in MByte.
           type: number
@@ -34441,6 +34614,7 @@ components:
           description: Receive time stamp
           format: int64
           type: integer
+          x-int64: true
         virusinfo:
           description: Virus name.
           type: string
@@ -34557,10 +34731,12 @@ components:
           description: PREGREET reject count.
           format: int64
           type: integer
+          x-int64: true
         rbl_rejects:
           description: Number of RBL rejects.
           format: int64
           type: integer
+          x-int64: true
         spamcount_in:
           description: Incoming spam mails.
           type: number
@@ -34630,14 +34806,17 @@ components:
           description: Time index.
           format: int64
           type: integer
+          x-int64: true
         pregreet_rejects:
           description: PREGREET reject count.
           format: int64
           type: integer
+          x-int64: true
         rbl_rejects:
           description: Number of RBL rejects.
           format: int64
           type: integer
+          x-int64: true
         spamcount_in:
           description: Incoming spam mails (spamcount_in + glcount + spfcount + rbl_rejects
             + pregreet_rejects).
@@ -34649,6 +34828,7 @@ components:
           description: Time (Unix epoch).
           format: int64
           type: integer
+          x-int64: true
         viruscount_in:
           description: Number of incoming virus mails.
           type: number
@@ -34701,6 +34881,7 @@ components:
           description: Hour (0-23).
           format: int64
           type: integer
+          x-int64: true
         spamcount_in:
           description: Incoming spam mails (spamcount_in + glcount + spfcount).
           type: number
@@ -34785,6 +34966,7 @@ components:
           description: Time index.
           format: int64
           type: integer
+          x-int64: true
         spam:
           description: Overall spam mail count (in and out).
           type: number
@@ -34798,6 +34980,7 @@ components:
           description: Time (Unix epoch).
           format: int64
           type: integer
+          x-int64: true
         timespan:
           description: Timespan in seconds for one data point
           type: number
@@ -34830,6 +35013,7 @@ components:
           description: The count of incoming not blocked E-Mails
           format: int64
           type: integer
+          x-int64: true
         receiver:
           description: The receiver
           type: string
@@ -34847,18 +35031,22 @@ components:
           description: Time index.
           format: int64
           type: integer
+          x-int64: true
         pregreet_rejects:
           description: PREGREET reject count.
           format: int64
           type: integer
+          x-int64: true
         rbl_rejects:
           description: RBL reject count.
           format: int64
           type: integer
+          x-int64: true
         time:
           description: Time (Unix epoch).
           format: int64
           type: integer
+          x-int64: true
       required:
       - index
       - pregreet_rejects
@@ -34896,6 +35084,7 @@ components:
           description: Detection count.
           format: int64
           type: integer
+          x-int64: true
         level:
           description: Spam level.
           type: string
@@ -34915,6 +35104,7 @@ components:
           description: Detection count.
           format: int64
           type: integer
+          x-int64: true
         name:
           description: Virus name.
           type: string
